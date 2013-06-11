@@ -1,0 +1,17 @@
+{
+  "name": "delegate-binding",
+  "repo": "bredele/delegate-binding",
+  "description": "Delegate binding for Reactive",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/reactive": "*",
+    "component/delegate": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

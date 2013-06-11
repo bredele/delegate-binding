@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Delegate binding</title>
+</head>
+<body>
+  <ul class='test' delegate='click,.clickable,test'>
+    <li class="clickable">clickable</li>
+    <li class="notclickable">not clickable</li>
+    <li class="clickable">clickable</li>
+    <li class="notclickable">not clickable</li>
+    <li class="clickable">clickable</li>
+    <li class="clickable">clickable</li>
+    <li class="clickable">clickable</li>
+    <li class="clickable">clickable</li>
+    <li class="notclickable">not clickable</li>
+  </ul>
+<script src='../build/build.js'></script>
+<script>
+  var reactive = require('reactive');
+  var Delegate = require('delegate-binding');
+  var view = reactive(document.querySelector('.body'));
+
+
+  var delegate = new Delegate(view, {
+    test : function(){
+      alert('haha');
+    }
+  });
+
+  </script>
+  </body>
+  </html>
